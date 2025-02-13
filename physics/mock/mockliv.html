@@ -242,7 +242,7 @@
         }
         async function loadQuestions() {
             try {
-                const response = await fetch('/physics/mock/questions.json');
+                const response = await fetch('./physics/mock/questions.json');
                 questions = await response.json();
                 unanswered = questions.length;
                 document.querySelector('.question-number').textContent = 
